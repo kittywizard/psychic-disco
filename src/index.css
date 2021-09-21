@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Zen Loop', sans-serif;
+
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin: 1em 0;
+  font-size: 2rem;
+}
+
+.app {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-container {
+  -webkit-box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.4); 
+  box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  background-color: rgb(231, 227, 227);
+}
+
+.checkbox-item {
+  margin-left: 0.75em;
+  font-size: 1.5rem;
+}
+
+
+
