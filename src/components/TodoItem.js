@@ -1,21 +1,24 @@
-import { render } from "@testing-library/react";
+import React from "react"
 
-function TodoList(props) {
-    return (
-        <div className="app"> 
-          <input type="checkbox" name="item" />
-          <p className="checkbox-item">{props.data.text}</p>
-        </div>
-    )
+// function TodoList(props) {
+//     return (
+//         <div className="app"> 
+//           <input type="checkbox" name="item" />
+//           <p className="checkbox-item">{props.data.text}</p>
+//         </div>
+//     )
 
-}
-
-// class toDoList extends React.Component {
-//   render() {
-//       return (
-//         //stuff here
-//       )
-//   }
 // }
 
-export default TodoList;
+class ToDoList extends React.Component {
+  render() {
+      return (
+        <div className="app"> 
+        <input type="checkbox" name="item" />
+        <p className="checkbox-item">{this.props.data.text}</p>
+      </div>
+      )
+  }
+}
+
+export default ToDoList;
