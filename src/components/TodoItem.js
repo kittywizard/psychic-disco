@@ -3,7 +3,10 @@ import React from "react"
 function ToDoList(props) {
     return (
         <div className="app"> 
-          <input type="checkbox" name="item" />
+          <input type="checkbox" 
+                name="item" 
+                onChange={() => console.log('checked?')} 
+                checked={props.data.completed}/>
           <p className="checkbox-item">{props.data.text}</p>
         </div>
     )
