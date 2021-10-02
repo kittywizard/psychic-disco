@@ -5,24 +5,16 @@ function ToDoList(props) {
         <div className="app"> 
           <input type="checkbox" 
                 name="item" 
-                onChange={() => console.log('checked?')} 
-                checked={props.data.completed}/>
+                checked={props.data.completed}
+                onChange={() => {
+                  props.handleChange(props.data.id);
+                }}
+                />
           <p className="checkbox-item">{props.data.text}</p>
         </div>
     )
 
 }
 
-// class ToDoList extends React.Component {
-
-//   render() {
-//       return (
-//         <div className="app"> 
-//         <input type="checkbox" name="item" />
-//         <p className="checkbox-item">{this.state.data}</p>
-//       </div>
-//       )
-//   }
-// }
 
 export default ToDoList;
